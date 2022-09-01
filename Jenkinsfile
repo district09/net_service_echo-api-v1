@@ -20,18 +20,15 @@
 * `openshiftDeployImage`: Use this to override the default Openshift image to mirror between clusters
 **/
 
-d09Project  kind: "", 
-            namespace: "", 
-            service: [""],
-            buildScript: "", 
-            templatepath: "", 
-            dotnetFolder: "",
-            dotnetSlnFile: "", 
-            dotnetTestFolder: "",
-            dotnetTestFile: "",
-            mainBranch: "",
-            repositoryUrl: "",
-            gitCredentials: "",
-            useSemanticRelease: "",
-            openshiftDeployImage: ""
+d09Project  kind: "netcore60", 
+            namespace: "servicefactory", 
+            service: ["echo-api-v1"],
+            dotnetFolder: "src",
+            dotnetSlnFile: "District09.Echo.sln", 
+            dotnetTestFolder: "District09.Echo.Tests",
+            dotnetTestFile: "District09.Echo.Tests.csproj",
+            mainBranch: "main",
+            repositoryUrl: "git@github.com:district09/net_service_echo-api-v1.git",
+            useSemanticRelease: true,
+            gitOpsPath: "echo-service/echo-service-v1"
 
