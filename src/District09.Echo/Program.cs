@@ -18,7 +18,7 @@ builder.Services.AddSingleton<IStartupFilter>(
 var app = builder.Build();
 
 app.UseCorrelationId();
-app.UseDigipolisRequestLogging();
+// app.UseDigipolisRequestLogging();
 app.MapGet("/", Routes.ReturnOk);
 
 app.Run();
