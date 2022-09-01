@@ -1,0 +1,21 @@
+openapi: 3.0.1
+info:
+  title: Echo service v1
+  description: Echo service v1
+  license:
+    name: EUPL
+    url: https://github.com/district09/net_service_echo-api-v1/blob/main/LICENSE
+  version: '3.0'
+servers:
+  - url: https://apidgdv.gent.be/servicefactory/echo-api/
+    description: District09 API Portal for Development Environment
+  - url: https://apidgqa.gent.be/servicefactory/echo-api/
+    description: District09 API Portal for Acceptance Environment
+  - url: https://apidg.gent.be/servicefactory/echo-api/
+    description: District09 API Portal for Production Environment
+paths:
+  /v1/:
+    get:
+      responses:
+        '200':
+          description: Success
