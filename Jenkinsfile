@@ -32,5 +32,5 @@ d09Project  kind: "netcore60",
             useSemanticRelease: true,
             gitOpsPath: "echo/echo-api-v1",
 			argoCdApplication: "echo"
-			argoCdProject: "echo-api-v1"
+			argoCdProject: "echo-api"
 
