@@ -30,5 +30,7 @@ d09Project  kind: "netcore60",
             mainBranch: "main",
             repositoryUrl: "git@github.com:district09/net_service_echo-api-v1.git",
             useSemanticRelease: true,
-            gitOpsPath: "echo-service/echo-service-v1"
+            gitOpsPath: "echo/echo-api-v1",
+			argoCdApplication: "echo"
+			argoCdProject: "echo-api-v1"
 
